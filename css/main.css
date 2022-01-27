@@ -32,9 +32,9 @@ nav {
   position: fixed;
   right: 0;
   top: 0;
+  background: white;
   height: 100vh;
   width: 50%;
-  background: white;
   z-index: 2;
   text-transform: uppercase;
   -webkit-transform: translateX(100%);
@@ -103,7 +103,7 @@ section.hero {
 section.hero .down-arrow {
   stroke: white;
   position: absolute;
-  bottom: 2em;
+  bottom: 8em;
   width: 1em;
   animation: moveArrow 1s alternate-reverse infinite;
 }
@@ -129,8 +129,8 @@ section.hero .down-arrow path {
 }
 
 .open-nav {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 @media only screen and (min-width: 680px) {
@@ -188,6 +188,9 @@ section.hero .down-arrow path {
     width: 40%;
     margin-bottom: 8em;
   }
+  section.hero .subhead {
+    margin-bottom: 3em;
+  }
   section.hero svg.down-arrow {
     stroke: black;
     position: unset;
@@ -204,11 +207,11 @@ section.hero .down-arrow path {
     margin-bottom: 8em;
   }
   .feature img {
-    width: 22.5em;
+    width: 25em;
   }
   .feature .content {
     text-align: right;
-    width: 22.5em;
+    width: 25em;
   }
   .feature.left {
         grid-template-areas: "left right";
@@ -220,13 +223,17 @@ section.hero .down-arrow path {
   }
   .feature.left .content {
     text-align: left;
-    width: 22.5em;
+    width: 25em;
     -ms-grid-column-align: left;
         justify-self: left;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
   .feature {
     gap: 0;
   }
@@ -256,8 +263,8 @@ section.hero .down-arrow path {
 
 @-webkit-keyframes moveArrow {
   from {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   to {
     tranform: translateY(0);
@@ -266,8 +273,8 @@ section.hero .down-arrow path {
 
 @keyframes moveArrow {
   from {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   to {
     tranform: translateY(0);
